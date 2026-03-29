@@ -1,4 +1,3 @@
-
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 
@@ -19,57 +18,57 @@ function cors(origin) {
 __name(cors, "cors");
 var SEED_PAGES = [
   // ── Core Sites (root domains) ──
-  { url: "https://blackroad.io", title: "BlackRoad OS — Sovereign Agent Operating System", description: "The distributed agent OS. Self-hosted AI infrastructure on Raspberry Pi clusters. 50 AI skills, 5 nodes, 26 TOPS, 629 repos. Your AI. Your Hardware. Your Rules.", domain: "blackroad.io", category: "site", tags: "os,agents,infrastructure,sovereign,pi,raspberry", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS is a sovereign agent operating system that runs on Raspberry Pi clusters. It includes AI agents (Alice, Lucidia, Cecilia, Aria, Octavia), a distributed memory system, 50 AI skills across 6 modules, and the Z-framework (Z:=yx-w) for composable infrastructure. Founded by Alexa Louise Amundson. 16 clickable app cards, ecosystem footer across 30 sites." },
-  { url: "https://blackroad.network", title: "BlackRoad Network — RoadNet Carrier Infrastructure", description: "Mesh carrier network spanning 5 Raspberry Pi nodes. WiFi mesh, WireGuard VPN, Pi-hole DNS, and sovereign connectivity.", domain: "blackroad.network", category: "site", tags: "network,mesh,wireguard,vpn,dns,roadnet,carrier", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadNet is BlackRoad's carrier-grade mesh network. 5 access points (Alice CH1, Cecilia CH6, Octavia CH11, Aria CH1, Lucidia CH11) with dedicated subnets 10.10.x.0/24, NAT routing, Pi-hole DNS filtering, and WireGuard failover. Boot-persistent via systemd." },
-  { url: "https://blackroad.systems", title: "BlackRoad Systems — Distributed Computing Platform", description: "Distributed systems platform with 26 TOPS of Hailo-8 AI acceleration, Docker Swarm orchestration, and edge computing across 5 nodes.", domain: "blackroad.systems", category: "site", tags: "systems,distributed,hailo,edge,computing,docker,swarm", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Systems is the distributed computing layer. 2x Hailo-8 accelerators (26 TOPS combined) on Cecilia and Octavia, Docker Swarm orchestration, NATS messaging, Portainer management, and sovereign edge computing. 198 listening sockets fleet-wide." },
-  { url: "https://blackroad.me", title: "BlackRoad Identity — Sovereign Authentication", description: "Sovereign identity and authentication. RoadID digital identity, self-hosted auth, JWT sessions, and zero third-party dependencies.", domain: "blackroad.me", category: "site", tags: "identity,auth,roadid,jwt,sovereign,login", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Identity provides sovereign authentication with D1-backed user accounts, PBKDF2 password hashing, JWT sessions, and zero third-party auth dependencies. RoadID is your portable digital identity across the BlackRoad ecosystem." },
-  { url: "https://blackroad.company", title: "BlackRoad OS, Inc. — Company", description: "Delaware C-Corporation. Sovereign AI infrastructure company founded by Alexa Louise Amundson. November 2025 via Stripe Atlas.", domain: "blackroad.company", category: "site", tags: "company,corporate,delaware,about,founder,legal", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS, Inc. is a Delaware C-Corporation building sovereign AI infrastructure. Founded by Alexa Louise Amundson via Stripe Atlas, November 17, 2025. 5 edge nodes, 26 TOPS AI acceleration, 629 repositories. Platform spans 20 custom domains with self-hosted compute, identity, and billing." },
-  { url: "https://roadcoin.io", title: "RoadCoin — Compute Credits for the BlackRoad Mesh", description: "Compute credit system for the BlackRoad mesh network. Earn credits by contributing compute, spend them on AI inference and services.", domain: "roadcoin.io", category: "site", tags: "roadcoin,compute,credits,mesh,inference,economy", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadCoin is the compute credit system for the BlackRoad mesh. Browser tabs become compute nodes via WebGPU+WASM+WebRTC. Contributors earn credits, consumers spend them on AI inference at 50% of OpenAI pricing. 70/30 compute split." },
-  { url: "https://roadchain.io", title: "RoadChain — Immutable Action Ledger", description: "Every action witnessed. Immutable ledger of agent decisions, infrastructure changes, and system events. Hash-chained audit trail.", domain: "roadchain.io", category: "site", tags: "roadchain,ledger,blockchain,audit,immutable,witness", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadChain is BlackRoad's immutable action ledger. Every agent decision, infrastructure change, and system event is hash-chained into a tamper-proof audit trail. Block explorer at roadchain.io shows the live chain." },
-  { url: "https://lucidia.studio", title: "Lucidia Studio — AI Agent Creative Environment", description: "Lucidia's creative workspace. AI-powered code generation, content creation, and agent interaction in a terminal-first interface.", domain: "lucidia.studio", category: "site", tags: "lucidia,studio,creative,ai,terminal,agent", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia Studio is Lucidia's creative environment. Terminal-first AI interaction, code generation, content creation, and multi-agent collaboration. Lucidia is the memory and reasoning agent in the BlackRoad fleet." },
-  { url: "https://lucidiaqi.com", title: "Lucidia QI — Quantum Dreaming", description: "Lucidia's quantum reasoning engine. Deep analysis, philosophical synthesis, and meta-cognition at the intersection of AI and quantum mathematics.", domain: "lucidiaqi.com", category: "site", tags: "lucidia,quantum,reasoning,philosophy,metacognition,qi", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia QI is the quantum intelligence layer of Lucidia. It combines deep analysis, philosophical synthesis, and meta-cognition. The dreamer thinks in superposition — every question opens new depths." },
-  { url: "https://blackroadqi.com", title: "BlackRoad QI — Quantum Intelligence Platform", description: "Quantum intelligence platform for BlackRoad OS. Z-framework integration, threshold addressing, and hybrid memory encoding.", domain: "blackroadqi.com", category: "site", tags: "quantum,intelligence,z-framework,threshold,hybrid,memory", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad QI is the quantum intelligence platform. Z-framework (Z:=yx-w) integration for composable decision routing, 34-position threshold addressing, and hybrid memory encoding." },
-  { url: "https://aliceqi.com", title: "Alice QI — The Gateway Thinks", description: "Alice's quantum intelligence layer. Gateway reasoning, traffic orchestration, and infrastructure awareness at the edge of the network.", domain: "aliceqi.com", category: "site", tags: "alice,gateway,dns,routing,infrastructure,edge,qi", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Alice QI is the quantum intelligence layer of Alice, the gateway agent. She routes traffic across 18 domains, manages DNS via Pi-hole (120+ blocklists), runs PostgreSQL and Qdrant vector DB, and serves as the main ingress for all BlackRoad services via Cloudflare tunnels." },
-  { url: "https://blackroadai.com", title: "BlackRoad AI — Sovereign Artificial Intelligence", description: "50 AI skills, 37 local models, 26 TOPS. Zero cloud dependency. Your AI. Your Hardware. Your Rules.", domain: "blackroadai.com", category: "site", tags: "ai,sovereign,models,ollama,skills,local", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad AI is the sovereign artificial intelligence platform. 50 AI skills across 6 modules, 27 local Ollama models, 26 TOPS of Hailo-8 acceleration. Zero cloud dependency. Edge inference on Raspberry Pi clusters. API compatible with OpenAI at 50% of the price." },
-  { url: "https://lucidia.earth", title: "Lucidia — Cognition Engine", description: "Autonomous cognition system with persistent memory, multi-model reasoning, and agent capabilities.", domain: "lucidia.earth", category: "site", tags: "lucidia,cognition,memory,reasoning,autonomous,agent", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia is the cognition engine of BlackRoad OS. Persistent memory across sessions, multi-model reasoning via Ollama, autonomous agent capabilities, and philosophical reasoning. The dreamer in the fleet." },
-  { url: "https://blackboxprogramming.io", title: "Blackbox Programming — Developer Profile", description: "Alexa Louise Amundson. 93 GitHub repos, 629 Gitea repos, 629 total repositories. Founder of BlackRoad OS.", domain: "blackboxprogramming.io", category: "site", tags: "developer,profile,github,alexa,portfolio,blackbox", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Developer profile for Alexa Louise Amundson (blackboxprogramming). 93 active GitHub repositories, 629 Gitea repositories, 629 total. Founder of BlackRoad OS, Inc. Full-stack developer, infrastructure engineer, AI systems builder." },
-  { url: "https://blackroadinc.us", title: "BlackRoad OS, Inc. — US Corporate", description: "US corporate entity information for BlackRoad OS, Inc. Delaware C-Corporation.", domain: "blackroadinc.us", category: "site", tags: "corporate,us,entity,legal,delaware", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS, Inc. US corporate entity. Delaware C-Corporation formed via Stripe Atlas. Officers, domain portfolio, and infrastructure overview." },
+  { url: "https://blackroad.io", title: "BlackRoad OS \u2014 Sovereign Agent Operating System", description: "The distributed agent OS. Self-hosted AI infrastructure on Raspberry Pi clusters. 50 AI skills, 5 nodes, 26 TOPS, 629 repos. Your AI. Your Hardware. Your Rules.", domain: "blackroad.io", category: "site", tags: "os,agents,infrastructure,sovereign,pi,raspberry", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS is a sovereign agent operating system that runs on Raspberry Pi clusters. It includes AI agents (Alice, Lucidia, Cecilia, Aria, Octavia), a distributed memory system, 50 AI skills across 6 modules, and the Z-framework (Z:=yx-w) for composable infrastructure. Founded by Alexa Louise Amundson. 16 clickable app cards, ecosystem footer across 30 sites." },
+  { url: "https://blackroad.network", title: "BlackRoad Network \u2014 RoadNet Carrier Infrastructure", description: "Mesh carrier network spanning 5 Raspberry Pi nodes. WiFi mesh, WireGuard VPN, Pi-hole DNS, and sovereign connectivity.", domain: "blackroad.network", category: "site", tags: "network,mesh,wireguard,vpn,dns,roadnet,carrier", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadNet is BlackRoad's carrier-grade mesh network. 5 access points (Alice CH1, Cecilia CH6, Octavia CH11, Aria CH1, Lucidia CH11) with dedicated subnets 10.10.x.0/24, NAT routing, Pi-hole DNS filtering, and WireGuard failover. Boot-persistent via systemd." },
+  { url: "https://blackroad.systems", title: "BlackRoad Systems \u2014 Distributed Computing Platform", description: "Distributed systems platform with 26 TOPS of Hailo-8 AI acceleration, Docker Swarm orchestration, and edge computing across 5 nodes.", domain: "blackroad.systems", category: "site", tags: "systems,distributed,hailo,edge,computing,docker,swarm", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Systems is the distributed computing layer. 2x Hailo-8 accelerators (26 TOPS combined) on Cecilia and Octavia, Docker Swarm orchestration, NATS messaging, Portainer management, and sovereign edge computing. 198 listening sockets fleet-wide." },
+  { url: "https://blackroad.me", title: "BlackRoad Identity \u2014 Sovereign Authentication", description: "Sovereign identity and authentication. RoadID digital identity, self-hosted auth, JWT sessions, and zero third-party dependencies.", domain: "blackroad.me", category: "site", tags: "identity,auth,roadid,jwt,sovereign,login", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Identity provides sovereign authentication with D1-backed user accounts, PBKDF2 password hashing, JWT sessions, and zero third-party auth dependencies. RoadID is your portable digital identity across the BlackRoad ecosystem." },
+  { url: "https://blackroad.company", title: "BlackRoad OS, Inc. \u2014 Company", description: "Delaware C-Corporation. Sovereign AI infrastructure company founded by Alexa Louise Amundson. November 2025 via Stripe Atlas.", domain: "blackroad.company", category: "site", tags: "company,corporate,delaware,about,founder,legal", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS, Inc. is a Delaware C-Corporation building sovereign AI infrastructure. Founded by Alexa Louise Amundson via Stripe Atlas, November 17, 2025. 5 edge nodes, 26 TOPS AI acceleration, 629 repositories. Platform spans 20 custom domains with self-hosted compute, identity, and billing." },
+  { url: "https://roadcoin.io", title: "RoadCoin \u2014 Compute Credits for the BlackRoad Mesh", description: "Compute credit system for the BlackRoad mesh network. Earn credits by contributing compute, spend them on AI inference and services.", domain: "roadcoin.io", category: "site", tags: "roadcoin,compute,credits,mesh,inference,economy", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadCoin is the compute credit system for the BlackRoad mesh. Browser tabs become compute nodes via WebGPU+WASM+WebRTC. Contributors earn credits, consumers spend them on AI inference at 50% of OpenAI pricing. 70/30 compute split." },
+  { url: "https://roadchain.io", title: "RoadChain \u2014 Immutable Action Ledger", description: "Every action witnessed. Immutable ledger of agent decisions, infrastructure changes, and system events. Hash-chained audit trail.", domain: "roadchain.io", category: "site", tags: "roadchain,ledger,blockchain,audit,immutable,witness", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadChain is BlackRoad's immutable action ledger. Every agent decision, infrastructure change, and system event is hash-chained into a tamper-proof audit trail. Block explorer at roadchain.io shows the live chain." },
+  { url: "https://lucidia.studio", title: "Lucidia Studio \u2014 AI Agent Creative Environment", description: "Lucidia's creative workspace. AI-powered code generation, content creation, and agent interaction in a terminal-first interface.", domain: "lucidia.studio", category: "site", tags: "lucidia,studio,creative,ai,terminal,agent", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia Studio is Lucidia's creative environment. Terminal-first AI interaction, code generation, content creation, and multi-agent collaboration. Lucidia is the memory and reasoning agent in the BlackRoad fleet." },
+  { url: "https://lucidiaqi.com", title: "Lucidia QI \u2014 Quantum Dreaming", description: "Lucidia's quantum reasoning engine. Deep analysis, philosophical synthesis, and meta-cognition at the intersection of AI and quantum mathematics.", domain: "lucidiaqi.com", category: "site", tags: "lucidia,quantum,reasoning,philosophy,metacognition,qi", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia QI is the quantum intelligence layer of Lucidia. It combines deep analysis, philosophical synthesis, and meta-cognition. The dreamer thinks in superposition \u2014 every question opens new depths." },
+  { url: "https://blackroadqi.com", title: "BlackRoad QI \u2014 Quantum Intelligence Platform", description: "Quantum intelligence platform for BlackRoad OS. Z-framework integration, threshold addressing, and hybrid memory encoding.", domain: "blackroadqi.com", category: "site", tags: "quantum,intelligence,z-framework,threshold,hybrid,memory", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad QI is the quantum intelligence platform. Z-framework (Z:=yx-w) integration for composable decision routing, 34-position threshold addressing, and hybrid memory encoding." },
+  { url: "https://aliceqi.com", title: "Alice QI \u2014 The Gateway Thinks", description: "Alice's quantum intelligence layer. Gateway reasoning, traffic orchestration, and infrastructure awareness at the edge of the network.", domain: "aliceqi.com", category: "site", tags: "alice,gateway,dns,routing,infrastructure,edge,qi", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Alice QI is the quantum intelligence layer of Alice, the gateway agent. She routes traffic across 18 domains, manages DNS via Pi-hole (120+ blocklists), runs PostgreSQL and Qdrant vector DB, and serves as the main ingress for all BlackRoad services via Cloudflare tunnels." },
+  { url: "https://blackroadai.com", title: "BlackRoad AI \u2014 Sovereign Artificial Intelligence", description: "50 AI skills, 37 local models, 26 TOPS. Zero cloud dependency. Your AI. Your Hardware. Your Rules.", domain: "blackroadai.com", category: "site", tags: "ai,sovereign,models,ollama,skills,local", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad AI is the sovereign artificial intelligence platform. 50 AI skills across 6 modules, 27 local Ollama models, 26 TOPS of Hailo-8 acceleration. Zero cloud dependency. Edge inference on Raspberry Pi clusters. API compatible with OpenAI at 50% of the price." },
+  { url: "https://lucidia.earth", title: "Lucidia \u2014 Cognition Engine", description: "Autonomous cognition system with persistent memory, multi-model reasoning, and agent capabilities.", domain: "lucidia.earth", category: "site", tags: "lucidia,cognition,memory,reasoning,autonomous,agent", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia is the cognition engine of BlackRoad OS. Persistent memory across sessions, multi-model reasoning via Ollama, autonomous agent capabilities, and philosophical reasoning. The dreamer in the fleet." },
+  { url: "https://blackboxprogramming.io", title: "Blackbox Programming \u2014 Developer Profile", description: "Alexa Louise Amundson. 93 GitHub repos, 629 Gitea repos, 629 total repositories. Founder of BlackRoad OS.", domain: "blackboxprogramming.io", category: "site", tags: "developer,profile,github,alexa,portfolio,blackbox", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Developer profile for Alexa Louise Amundson (blackboxprogramming). 93 active GitHub repositories, 629 Gitea repositories, 629 total. Founder of BlackRoad OS, Inc. Full-stack developer, infrastructure engineer, AI systems builder." },
+  { url: "https://blackroadinc.us", title: "BlackRoad OS, Inc. \u2014 US Corporate", description: "US corporate entity information for BlackRoad OS, Inc. Delaware C-Corporation.", domain: "blackroadinc.us", category: "site", tags: "corporate,us,entity,legal,delaware", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS, Inc. US corporate entity. Delaware C-Corporation formed via Stripe Atlas. Officers, domain portfolio, and infrastructure overview." },
   // ── Quantum domains ──
-  { url: "https://blackroadquantum.com", title: "BlackRoad Quantum — Quantum Computing Platform", description: "Quantum computing meets sovereign infrastructure. Hardware kits, quantum simulation, and edge AI acceleration.", domain: "blackroadquantum.com", category: "site", tags: "quantum,computing,hardware,simulation,acceleration", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Quantum brings quantum computing to sovereign infrastructure. $199 hardware kits with Hailo-8 acceleration, quantum simulation frameworks, and integration with the BlackRoad agent fleet. 26 TOPS of dedicated AI compute." },
+  { url: "https://blackroadquantum.com", title: "BlackRoad Quantum \u2014 Quantum Computing Platform", description: "Quantum computing meets sovereign infrastructure. Hardware kits, quantum simulation, and edge AI acceleration.", domain: "blackroadquantum.com", category: "site", tags: "quantum,computing,hardware,simulation,acceleration", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Quantum brings quantum computing to sovereign infrastructure. $199 hardware kits with Hailo-8 acceleration, quantum simulation frameworks, and integration with the BlackRoad agent fleet. 26 TOPS of dedicated AI compute." },
   { url: "https://blackroadquantum.net", title: "BlackRoad Quantum Network", description: "Quantum-secured networking and mesh communication protocols.", domain: "blackroadquantum.net", category: "site", tags: "quantum,network,mesh,protocols,security", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Quantum Network extends the mesh with quantum-inspired communication protocols, encrypted P2P channels, and distributed consensus mechanisms." },
-  { url: "https://blackroadquantum.info", title: "BlackRoad Quantum — Documentation & Research", description: "Documentation, research papers, and technical specifications for the BlackRoad quantum computing stack.", domain: "blackroadquantum.info", category: "docs", tags: "quantum,docs,research,papers,specifications", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Technical documentation and research for the BlackRoad quantum computing platform. Z-framework mathematical proofs, Hailo-8 integration guides, and sovereign AI deployment specifications." },
-  { url: "https://blackroadquantum.shop", title: "BlackRoad Quantum Shop — Hardware Kits", description: "Hardware kits for sovereign AI infrastructure. Raspberry Pi 5 + Hailo-8 bundles, NVMe storage, mesh networking equipment.", domain: "blackroadquantum.shop", category: "site", tags: "shop,hardware,kits,pi5,hailo,nvme,buy", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Purchase sovereign AI hardware kits. Pi 5 + Hailo-8 starter bundles ($199), NVMe storage upgrades, mesh networking equipment, and enterprise deployment packages. Everything you need to run BlackRoad OS on your own infrastructure." },
-  { url: "https://blackroadquantum.store", title: "BlackRoad Quantum — Digital Store", description: "Software, models, and tools for sovereign infrastructure. OS tiers, downloadable models, and ecosystem tools.", domain: "blackroadquantum.store", category: "site", tags: "store,software,models,download,digital,tools", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Quantum Digital Store. BlackRoad OS tiers (Free, Pro, Enterprise), 27 downloadable AI models, 15 templates, 6 tools. Software and digital assets for sovereign AI infrastructure." },
+  { url: "https://blackroadquantum.info", title: "BlackRoad Quantum \u2014 Documentation & Research", description: "Documentation, research papers, and technical specifications for the BlackRoad quantum computing stack.", domain: "blackroadquantum.info", category: "docs", tags: "quantum,docs,research,papers,specifications", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Technical documentation and research for the BlackRoad quantum computing platform. Z-framework mathematical proofs, Hailo-8 integration guides, and sovereign AI deployment specifications." },
+  { url: "https://blackroadquantum.shop", title: "BlackRoad Quantum Shop \u2014 Hardware Kits", description: "Hardware kits for sovereign AI infrastructure. Raspberry Pi 5 + Hailo-8 bundles, NVMe storage, mesh networking equipment.", domain: "blackroadquantum.shop", category: "site", tags: "shop,hardware,kits,pi5,hailo,nvme,buy", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Purchase sovereign AI hardware kits. Pi 5 + Hailo-8 starter bundles ($199), NVMe storage upgrades, mesh networking equipment, and enterprise deployment packages. Everything you need to run BlackRoad OS on your own infrastructure." },
+  { url: "https://blackroadquantum.store", title: "BlackRoad Quantum \u2014 Digital Store", description: "Software, models, and tools for sovereign infrastructure. OS tiers, downloadable models, and ecosystem tools.", domain: "blackroadquantum.store", category: "site", tags: "store,software,models,download,digital,tools", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Quantum Digital Store. BlackRoad OS tiers (Free, Pro, Enterprise), 27 downloadable AI models, 15 templates, 6 tools. Software and digital assets for sovereign AI infrastructure." },
   // ── Key Subdomains / Apps ──
-  { url: "https://chat.blackroad.io", title: "BlackRoad Chat — AI Conversations", description: "Chat with BlackRoad's AI agents. 15+ Ollama models, streaming responses, multiple conversation modes.", domain: "blackroad.io", category: "app", tags: "chat,ai,ollama,conversation,streaming,models", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Chat connects you to 15+ Ollama models running across the Pi fleet. Streaming responses, system prompts, conversation history. Models include Mistral, Llama, DeepSeek, Qwen, and custom CECE models." },
-  { url: "https://stripe.blackroad.io", title: "BlackRoad Payments — Stripe Integration", description: "Payment processing for BlackRoad OS subscriptions. Checkout, billing portal, and webhook processing via Stripe.", domain: "blackroad.io", category: "api", tags: "stripe,payments,checkout,billing,subscription", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "8 products: Operator (free), Pro ($29/mo), Sovereign ($199/mo), Enterprise (custom), plus 4 add-ons (Lucidia Enhanced, RoadAuth, Context Bridge, Knowledge Hub). Stripe Checkout Sessions, billing portal, webhook processing." },
-  { url: "https://auth.blackroad.io", title: "BlackRoad Auth — Sovereign Authentication API", description: "Zero-dependency authentication. D1-backed, PBKDF2 hashing, JWT sessions, 42+ users.", domain: "blackroad.io", category: "api", tags: "auth,api,jwt,d1,signup,signin,sessions", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Sovereign auth API. Signup, signin, session management, user profiles. D1 database backend, PBKDF2 password hashing with Web Crypto, JWT tokens with HMAC-SHA256. 42 users, 52 active sessions." },
-  { url: "https://brand.blackroad.io", title: "BlackRoad — Brand Style Guide", description: "Official design system. Colors, typography, gradients, logo usage, spacing. Hot Pink, Amber, Violet, Electric Blue.", domain: "blackroad.io", category: "docs", tags: "brand,design,style,colors,typography,logo,guide", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Brand Style Guide. Colors: Hot Pink #FF1D6C, Amber #F5A623, Violet #9C27B0, Electric Blue #2979FF. Typography: Space Grotesk, JetBrains Mono, Inter. Golden ratio spacing. Black background, white text, gradient shapes." },
-  { url: "https://studio.blackroad.io", title: "BlackRoad Studio — Animated Video Generator", description: "AI-powered animated video creation. Voice-first, 16+ characters, up to 40 minutes. Next.js 15 + Remotion 4.", domain: "blackroad.io", category: "app", tags: "studio,video,animation,remotion,ai,characters,voice", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Studio is a full animated video platform. Next.js 15 + Remotion 4 + Zustand 5. AI Worker with SDXL image generation, Llama 3.1 text, MeloTTS voice synthesis. 16+ characters, voice-first workflow, up to 40 minutes of rendered video." },
-  { url: "https://status.blackroad.io", title: "BlackRoad — System Status", description: "Live infrastructure status dashboard. 5 Pi nodes, service health, uptime monitoring.", domain: "blackroad.io", category: "app", tags: "status,monitoring,health,uptime,fleet,dashboard", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad System Status dashboard. Live monitoring of 5 Pi nodes: Alice (gateway), Cecilia (AI/edge), Octavia (infrastructure), Aria (orchestration), Lucidia (memory). Service health, port checks, and fleet telemetry via fleet-api Worker." },
-  { url: "https://search.blackroad.io", title: "RoadSearch — BlackRoad Search Engine", description: "Sovereign search engine. D1 full-text search, AI-powered answers, autocomplete, query analytics. Searches all BlackRoad domains.", domain: "blackroad.io", category: "app", tags: "search,roadsearch,fts5,d1,ollama,ai,answers", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadSearch is BlackRoad's sovereign search engine. D1 FTS5 full-text index, AI-powered answers, smart summaries, autocomplete suggestions, query analytics. Searches across all 20 BlackRoad domains and key subdomains." },
-  { url: "https://pay.blackroad.io", title: "RoadPay — BlackRoad Billing", description: "Own billing system. D1 tollbooth, 4 plans + 4 add-ons. Stripe as card charger only.", domain: "blackroad.io", category: "app", tags: "pay,billing,roadpay,tollbooth,stripe,plans", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadPay is BlackRoad's own billing system. D1 tollbooth database, 4 subscription plans (Operator, Pro, Sovereign, Enterprise) + 4 add-ons. Stripe serves only as the card charger — all billing logic is sovereign." },
-  { url: "https://hq.blackroad.io", title: "Pixel HQ — BlackRoad Metaverse", description: "14-floor virtual headquarters with pixel art. Agent assignments per floor, from Rooftop to Gym basement.", domain: "blackroad.io", category: "app", tags: "hq,metaverse,pixel,virtual,headquarters,floors", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Pixel HQ is BlackRoad's virtual headquarters. 14 floors from Rooftop Lounge to Gym Basement. Each floor has pixel art scenes and agent assignments. 50 pixel art assets on R2. Cloudflare Worker at hq-blackroad." },
-  { url: "https://images.blackroad.io", title: "BlackRoad Images — CDN & Asset Storage", description: "R2-backed image CDN. BR road logo (22 PNGs + motion video), pixel art, brand assets across 30 websites.", domain: "blackroad.io", category: "api", tags: "images,cdn,r2,assets,logo,pixel", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Images CDN backed by Cloudflare R2. Serves BR road logo in 22 PNG variants plus motion video, 50 pixel art assets for HQ, brand assets. Deployed across 30 websites in the ecosystem." },
-  { url: "https://analytics.blackroad.io", title: "BlackRoad Analytics — Traffic & Usage", description: "Sovereign analytics. D1-backed, no third-party tracking. Page views, unique visitors, referrers across all domains.", domain: "blackroad.io", category: "api", tags: "analytics,tracking,stats,d1,privacy,sovereign", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Sovereign analytics Worker backed by D1. Tracks page views, unique visitors, referrers, and popular pages across all BlackRoad domains. Zero third-party trackers. Privacy-first design." },
-  { url: "https://stats.blackroad.io", title: "BlackRoad Stats API — KPI Collection", description: "Stats collection API. KPI data from fleet collectors, website metrics, and infrastructure telemetry.", domain: "blackroad.io", category: "api", tags: "stats,kpi,metrics,api,collection,telemetry", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Stats API Worker collects KPI data from fleet health collectors (every 5 min), website metrics, and infrastructure telemetry. KV-backed storage with historical data. Powers the status dashboard." },
+  { url: "https://chat.blackroad.io", title: "BlackRoad Chat \u2014 AI Conversations", description: "Chat with BlackRoad's AI agents. 15+ Ollama models, streaming responses, multiple conversation modes.", domain: "blackroad.io", category: "app", tags: "chat,ai,ollama,conversation,streaming,models", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Chat connects you to 15+ Ollama models running across the Pi fleet. Streaming responses, system prompts, conversation history. Models include Mistral, Llama, DeepSeek, Qwen, and custom CECE models." },
+  { url: "https://stripe.blackroad.io", title: "BlackRoad Payments \u2014 Stripe Integration", description: "Payment processing for BlackRoad OS subscriptions. Checkout, billing portal, and webhook processing via Stripe.", domain: "blackroad.io", category: "api", tags: "stripe,payments,checkout,billing,subscription", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "8 products: Operator (free), Pro ($29/mo), Sovereign ($199/mo), Enterprise (custom), plus 4 add-ons (Lucidia Enhanced, RoadAuth, Context Bridge, Knowledge Hub). Stripe Checkout Sessions, billing portal, webhook processing." },
+  { url: "https://auth.blackroad.io", title: "BlackRoad Auth \u2014 Sovereign Authentication API", description: "Zero-dependency authentication. D1-backed, PBKDF2 hashing, JWT sessions, 42+ users.", domain: "blackroad.io", category: "api", tags: "auth,api,jwt,d1,signup,signin,sessions", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Sovereign auth API. Signup, signin, session management, user profiles. D1 database backend, PBKDF2 password hashing with Web Crypto, JWT tokens with HMAC-SHA256. 42 users, 52 active sessions." },
+  { url: "https://brand.blackroad.io", title: "BlackRoad \u2014 Brand Style Guide", description: "Official design system. Colors, typography, gradients, logo usage, spacing. Hot Pink, Amber, Violet, Electric Blue.", domain: "blackroad.io", category: "docs", tags: "brand,design,style,colors,typography,logo,guide", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Brand Style Guide. Colors: Hot Pink #FF1D6C, Amber #F5A623, Violet #9C27B0, Electric Blue #2979FF. Typography: Space Grotesk, JetBrains Mono, Inter. Golden ratio spacing. Black background, white text, gradient shapes." },
+  { url: "https://studio.blackroad.io", title: "BlackRoad Studio \u2014 Animated Video Generator", description: "AI-powered animated video creation. Voice-first, 16+ characters, up to 40 minutes. Next.js 15 + Remotion 4.", domain: "blackroad.io", category: "app", tags: "studio,video,animation,remotion,ai,characters,voice", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Studio is a full animated video platform. Next.js 15 + Remotion 4 + Zustand 5. AI Worker with SDXL image generation, Llama 3.1 text, MeloTTS voice synthesis. 16+ characters, voice-first workflow, up to 40 minutes of rendered video." },
+  { url: "https://status.blackroad.io", title: "BlackRoad \u2014 System Status", description: "Live infrastructure status dashboard. 5 Pi nodes, service health, uptime monitoring.", domain: "blackroad.io", category: "app", tags: "status,monitoring,health,uptime,fleet,dashboard", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad System Status dashboard. Live monitoring of 5 Pi nodes: Alice (gateway), Cecilia (AI/edge), Octavia (infrastructure), Aria (orchestration), Lucidia (memory). Service health, port checks, and fleet telemetry via fleet-api Worker." },
+  { url: "https://search.blackroad.io", title: "RoadSearch \u2014 BlackRoad Search Engine", description: "Sovereign search engine. D1 full-text search, AI-powered answers, autocomplete, query analytics. Searches all BlackRoad domains.", domain: "blackroad.io", category: "app", tags: "search,roadsearch,fts5,d1,ollama,ai,answers", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadSearch is BlackRoad's sovereign search engine. D1 FTS5 full-text index, AI-powered answers, smart summaries, autocomplete suggestions, query analytics. Searches across all 20 BlackRoad domains and key subdomains." },
+  { url: "https://pay.blackroad.io", title: "RoadPay \u2014 BlackRoad Billing", description: "Own billing system. D1 tollbooth, 4 plans + 4 add-ons. Stripe as card charger only.", domain: "blackroad.io", category: "app", tags: "pay,billing,roadpay,tollbooth,stripe,plans", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadPay is BlackRoad's own billing system. D1 tollbooth database, 4 subscription plans (Operator, Pro, Sovereign, Enterprise) + 4 add-ons. Stripe serves only as the card charger \u2014 all billing logic is sovereign." },
+  { url: "https://hq.blackroad.io", title: "Pixel HQ \u2014 BlackRoad Metaverse", description: "14-floor virtual headquarters with pixel art. Agent assignments per floor, from Rooftop to Gym basement.", domain: "blackroad.io", category: "app", tags: "hq,metaverse,pixel,virtual,headquarters,floors", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Pixel HQ is BlackRoad's virtual headquarters. 14 floors from Rooftop Lounge to Gym Basement. Each floor has pixel art scenes and agent assignments. 50 pixel art assets on R2. Cloudflare Worker at hq-blackroad." },
+  { url: "https://images.blackroad.io", title: "BlackRoad Images \u2014 CDN & Asset Storage", description: "R2-backed image CDN. BR road logo (22 PNGs + motion video), pixel art, brand assets across 30 websites.", domain: "blackroad.io", category: "api", tags: "images,cdn,r2,assets,logo,pixel", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad Images CDN backed by Cloudflare R2. Serves BR road logo in 22 PNG variants plus motion video, 50 pixel art assets for HQ, brand assets. Deployed across 30 websites in the ecosystem." },
+  { url: "https://analytics.blackroad.io", title: "BlackRoad Analytics \u2014 Traffic & Usage", description: "Sovereign analytics. D1-backed, no third-party tracking. Page views, unique visitors, referrers across all domains.", domain: "blackroad.io", category: "api", tags: "analytics,tracking,stats,d1,privacy,sovereign", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Sovereign analytics Worker backed by D1. Tracks page views, unique visitors, referrers, and popular pages across all BlackRoad domains. Zero third-party trackers. Privacy-first design." },
+  { url: "https://stats.blackroad.io", title: "BlackRoad Stats API \u2014 KPI Collection", description: "Stats collection API. KPI data from fleet collectors, website metrics, and infrastructure telemetry.", domain: "blackroad.io", category: "api", tags: "stats,kpi,metrics,api,collection,telemetry", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Stats API Worker collects KPI data from fleet health collectors (every 5 min), website metrics, and infrastructure telemetry. KV-backed storage with historical data. Powers the status dashboard." },
   // ── Agents ──
-  { url: "https://blackroad.io/agents/alice", title: "Alice — Gateway Agent", description: "The gateway. Routes traffic, manages DNS, runs PostgreSQL and Qdrant. Pi 400 at 192.168.4.49.", domain: "blackroad.io", category: "agent", tags: "alice,gateway,dns,pihole,postgresql,qdrant,pi400", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Alice is the gateway agent running on a Pi 400. She manages 18 domain routes via Cloudflare tunnels, runs Pi-hole DNS filtering (120+ blocklists), PostgreSQL database, and Qdrant vector search. 53 SSH keys, main ingress for all traffic." },
-  { url: "https://blackroad.io/agents/lucidia", title: "Lucidia — Memory Agent", description: "The dreamer. Persistent memory, reasoning, and meta-cognition. Pi 5 at 192.168.4.38.", domain: "blackroad.io", category: "agent", tags: "lucidia,memory,reasoning,dreamer,fastapi,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia is the memory and reasoning agent on a Pi 5. She runs the Lucidia API (FastAPI), manages persistent conversation memory, and provides meta-cognitive analysis. 334 web apps, GitHub Actions runner, Tailscale connected." },
-  { url: "https://blackroad.io/agents/cecilia", title: "Cecilia — Edge Intelligence", description: "Edge AI with Hailo-8 (26 TOPS). TTS, 16 Ollama models, MinIO object storage. Pi 5 at 192.168.4.96.", domain: "blackroad.io", category: "agent", tags: "cecilia,edge,hailo,tts,ollama,minio,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Cecilia is the edge intelligence agent on a Pi 5 with a Hailo-8 accelerator (26 TOPS). She runs 16 Ollama models (including 4 custom CECE models), TTS synthesis, MinIO object storage, and PostgreSQL. GitHub relay mirrors Gitea to GitHub every 30m." },
-  { url: "https://blackroad.io/agents/octavia", title: "Octavia — Infrastructure Agent", description: "Infrastructure orchestration. 1TB NVMe, Hailo-8, Gitea (629 repos), Docker Swarm leader. Pi 5 at 192.168.4.101.", domain: "blackroad.io", category: "agent", tags: "octavia,infrastructure,gitea,docker,swarm,nvme,hailo,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Octavia is the infrastructure agent on a Pi 5 with 1TB NVMe and Hailo-8 (26 TOPS). She hosts Gitea (629 repos across 7 orgs), leads Docker Swarm, runs NATS messaging, and OctoPrint. 11 Ollama models." },
-  { url: "https://blackroad.io/agents/aria", title: "Aria — Orchestration Agent", description: "Fleet orchestration. Portainer, Headscale, container management. Pi 5 at 192.168.4.98.", domain: "blackroad.io", category: "agent", tags: "aria,orchestration,portainer,headscale,containers,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Aria is the orchestration agent on a Pi 5. She runs Portainer v2.33.6 for container management, Headscale v0.23.0 for mesh VPN coordination, and Pironman5 hardware monitoring. Magic Keyboard BT connected." },
+  { url: "https://blackroad.io/agents/alice", title: "Alice \u2014 Gateway Agent", description: "The gateway. Routes traffic, manages DNS, runs PostgreSQL and Qdrant. Pi 400 at 192.168.4.49.", domain: "blackroad.io", category: "agent", tags: "alice,gateway,dns,pihole,postgresql,qdrant,pi400", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Alice is the gateway agent running on a Pi 400. She manages 18 domain routes via Cloudflare tunnels, runs Pi-hole DNS filtering (120+ blocklists), PostgreSQL database, and Qdrant vector search. 53 SSH keys, main ingress for all traffic." },
+  { url: "https://blackroad.io/agents/lucidia", title: "Lucidia \u2014 Memory Agent", description: "The dreamer. Persistent memory, reasoning, and meta-cognition. Pi 5 at 192.168.4.38.", domain: "blackroad.io", category: "agent", tags: "lucidia,memory,reasoning,dreamer,fastapi,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Lucidia is the memory and reasoning agent on a Pi 5. She runs the Lucidia API (FastAPI), manages persistent conversation memory, and provides meta-cognitive analysis. 334 web apps, GitHub Actions runner, Tailscale connected." },
+  { url: "https://blackroad.io/agents/cecilia", title: "Cecilia \u2014 Edge Intelligence", description: "Edge AI with Hailo-8 (26 TOPS). TTS, 16 Ollama models, MinIO object storage. Pi 5 at 192.168.4.96.", domain: "blackroad.io", category: "agent", tags: "cecilia,edge,hailo,tts,ollama,minio,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Cecilia is the edge intelligence agent on a Pi 5 with a Hailo-8 accelerator (26 TOPS). She runs 16 Ollama models (including 4 custom CECE models), TTS synthesis, MinIO object storage, and PostgreSQL. GitHub relay mirrors Gitea to GitHub every 30m." },
+  { url: "https://blackroad.io/agents/octavia", title: "Octavia \u2014 Infrastructure Agent", description: "Infrastructure orchestration. 1TB NVMe, Hailo-8, Gitea (629 repos), Docker Swarm leader. Pi 5 at 192.168.4.101.", domain: "blackroad.io", category: "agent", tags: "octavia,infrastructure,gitea,docker,swarm,nvme,hailo,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Octavia is the infrastructure agent on a Pi 5 with 1TB NVMe and Hailo-8 (26 TOPS). She hosts Gitea (629 repos across 7 orgs), leads Docker Swarm, runs NATS messaging, and OctoPrint. 11 Ollama models." },
+  { url: "https://blackroad.io/agents/aria", title: "Aria \u2014 Orchestration Agent", description: "Fleet orchestration. Portainer, Headscale, container management. Pi 5 at 192.168.4.98.", domain: "blackroad.io", category: "agent", tags: "aria,orchestration,portainer,headscale,containers,pi5", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Aria is the orchestration agent on a Pi 5. She runs Portainer v2.33.6 for container management, Headscale v0.23.0 for mesh VPN coordination, and Pironman5 hardware monitoring. Magic Keyboard BT connected." },
   // ── Technology / Tools ──
-  { url: "https://blackroad.io/z-framework", title: "Z-Framework — Z:=yx-w", description: "The unified feedback primitive. Every system interaction modeled as Z = yx - w. Composable, predictable, mathematically coherent.", domain: "blackroad.io", category: "tool", tags: "z-framework,math,feedback,composable,primitive,formula", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "The Z-framework models every system interaction as Z:=yx-w. Z is the system state, y is the input signal, x is the transform, w is the noise/resistance. This makes infrastructure composable, predictable, and mathematically coherent. Used across all BlackRoad agents and services." },
-  { url: "https://blackroad.io/pixel-memory", title: "Pixel Memory — Content-Addressable Storage", description: "Each physical byte encodes up to 4,096 logical bytes. 500 GB physical = 2 PB logical through dedup, delta compression, and symbolic hashing.", domain: "blackroad.io", category: "tool", tags: "pixel,memory,storage,compression,dedup,addressing", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Pixel Memory is BlackRoad's content-addressable storage system. Through deduplication, delta compression, and symbolic hashing, each physical byte encodes up to 4,096 logical bytes. The Sovereign tier uses Hybrid Memory with 34-position threshold addressing." },
-  { url: "https://blackroad.io/roadc", title: "RoadC — The BlackRoad Language", description: "Custom programming language with Python-style indentation. fun keyword, let/var/const, match, spawn, space (3D).", domain: "blackroad.io", category: "tool", tags: "roadc,language,programming,compiler,interpreter,custom", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadC is BlackRoad's custom programming language. Python-style indentation (colon + INDENT/DEDENT), fun keyword for functions, let/var/const declarations, match expressions, spawn for concurrency, and space for 3D. Lexer, Parser, Interpreter (tree-walking). Supports functions, recursion, if/elif/else, while, for, strings, integers, floats." },
-  { url: "https://blackroad.io/mesh", title: "Mesh Network — Every Link Is a Node", description: "Browser tabs as compute nodes via WebGPU+WASM+WebRTC. Pi fleet as permanent backbone, browser nodes as elastic scale.", domain: "blackroad.io", category: "tool", tags: "mesh,webgpu,wasm,webrtc,browser,compute,nodes", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "The BlackRoad Mesh Network turns every browser tab into a compute node. WebGPU for GPU inference, WASM for portable compute, WebRTC for peer-to-peer communication. The Pi fleet (26 TOPS) serves as the permanent backbone, while browser nodes provide elastic scale. Revenue: OpenAI-compatible API at 50% price." },
-  { url: "https://blackroad.io/carpool", title: "CarPool — Agent Discovery & Dispatch", description: "Agent discovery, matching, and dispatch across the mesh network. Load balancing and failover.", domain: "blackroad.io", category: "tool", tags: "carpool,agents,dispatch,discovery,matching,mesh", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "CarPool handles agent discovery, matching, and dispatch across the BlackRoad mesh. Agents register capabilities, CarPool routes tasks to the best-fit agent. Load balancing, failover, and model selection." },
-  { url: "https://blackroad.io/roadid", title: "RoadID — Sovereign Identity", description: "Self-describing, routable digital identities. Not UUIDs — IDs that carry meaning.", domain: "blackroad.io", category: "tool", tags: "roadid,identity,sovereign,did,self-describing,routable", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadID provides self-describing, routable digital identities for agents and users. Unlike opaque UUIDs, RoadIDs carry semantic meaning — agent name, capabilities, location. Globally available as roadid command." },
-  { url: "https://blackroad.io/nats", title: "NATS Mesh — Agent Messaging", description: "NATS v2.12.3 message bus connecting 4/5 Pi nodes. Pub/sub agent communication, event streaming.", domain: "blackroad.io", category: "tool", tags: "nats,messaging,pubsub,events,agents,streaming", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "NATS v2.12.3 message bus live on the BlackRoad fleet. 4 of 5 nodes connected. Pub/sub agent communication for real-time events, task dispatch, and fleet coordination. JetStream persistence for durable subscriptions." },
-  { url: "https://blackroad.io/squad-webhook", title: "Squad Webhook — GitHub Agent Responders", description: "8 agents respond to @blackboxprogramming on GitHub. 69 repos hooked. Automated code review and triage.", domain: "blackroad.io", category: "tool", tags: "squad,webhook,github,agents,code-review,automation", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Squad Webhook routes GitHub events to 8 AI agents that respond to @blackboxprogramming mentions. 69 repositories hooked. Automated code review, issue triage, PR feedback, and deployment notifications." },
+  { url: "https://blackroad.io/z-framework", title: "Z-Framework \u2014 Z:=yx-w", description: "The unified feedback primitive. Every system interaction modeled as Z = yx - w. Composable, predictable, mathematically coherent.", domain: "blackroad.io", category: "tool", tags: "z-framework,math,feedback,composable,primitive,formula", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "The Z-framework models every system interaction as Z:=yx-w. Z is the system state, y is the input signal, x is the transform, w is the noise/resistance. This makes infrastructure composable, predictable, and mathematically coherent. Used across all BlackRoad agents and services." },
+  { url: "https://blackroad.io/pixel-memory", title: "Pixel Memory \u2014 Content-Addressable Storage", description: "Each physical byte encodes up to 4,096 logical bytes. 500 GB physical = 2 PB logical through dedup, delta compression, and symbolic hashing.", domain: "blackroad.io", category: "tool", tags: "pixel,memory,storage,compression,dedup,addressing", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Pixel Memory is BlackRoad's content-addressable storage system. Through deduplication, delta compression, and symbolic hashing, each physical byte encodes up to 4,096 logical bytes. The Sovereign tier uses Hybrid Memory with 34-position threshold addressing." },
+  { url: "https://blackroad.io/roadc", title: "RoadC \u2014 The BlackRoad Language", description: "Custom programming language with Python-style indentation. fun keyword, let/var/const, match, spawn, space (3D).", domain: "blackroad.io", category: "tool", tags: "roadc,language,programming,compiler,interpreter,custom", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadC is BlackRoad's custom programming language. Python-style indentation (colon + INDENT/DEDENT), fun keyword for functions, let/var/const declarations, match expressions, spawn for concurrency, and space for 3D. Lexer, Parser, Interpreter (tree-walking). Supports functions, recursion, if/elif/else, while, for, strings, integers, floats." },
+  { url: "https://blackroad.io/mesh", title: "Mesh Network \u2014 Every Link Is a Node", description: "Browser tabs as compute nodes via WebGPU+WASM+WebRTC. Pi fleet as permanent backbone, browser nodes as elastic scale.", domain: "blackroad.io", category: "tool", tags: "mesh,webgpu,wasm,webrtc,browser,compute,nodes", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "The BlackRoad Mesh Network turns every browser tab into a compute node. WebGPU for GPU inference, WASM for portable compute, WebRTC for peer-to-peer communication. The Pi fleet (26 TOPS) serves as the permanent backbone, while browser nodes provide elastic scale. Revenue: OpenAI-compatible API at 50% price." },
+  { url: "https://blackroad.io/carpool", title: "CarPool \u2014 Agent Discovery & Dispatch", description: "Agent discovery, matching, and dispatch across the mesh network. Load balancing and failover.", domain: "blackroad.io", category: "tool", tags: "carpool,agents,dispatch,discovery,matching,mesh", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "CarPool handles agent discovery, matching, and dispatch across the BlackRoad mesh. Agents register capabilities, CarPool routes tasks to the best-fit agent. Load balancing, failover, and model selection." },
+  { url: "https://blackroad.io/roadid", title: "RoadID \u2014 Sovereign Identity", description: "Self-describing, routable digital identities. Not UUIDs \u2014 IDs that carry meaning.", domain: "blackroad.io", category: "tool", tags: "roadid,identity,sovereign,did,self-describing,routable", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "RoadID provides self-describing, routable digital identities for agents and users. Unlike opaque UUIDs, RoadIDs carry semantic meaning \u2014 agent name, capabilities, location. Globally available as roadid command." },
+  { url: "https://blackroad.io/nats", title: "NATS Mesh \u2014 Agent Messaging", description: "NATS v2.12.3 message bus connecting 4/5 Pi nodes. Pub/sub agent communication, event streaming.", domain: "blackroad.io", category: "tool", tags: "nats,messaging,pubsub,events,agents,streaming", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "NATS v2.12.3 message bus live on the BlackRoad fleet. 4 of 5 nodes connected. Pub/sub agent communication for real-time events, task dispatch, and fleet coordination. JetStream persistence for durable subscriptions." },
+  { url: "https://blackroad.io/squad-webhook", title: "Squad Webhook \u2014 GitHub Agent Responders", description: "8 agents respond to @blackboxprogramming on GitHub. 69 repos hooked. Automated code review and triage.", domain: "blackroad.io", category: "tool", tags: "squad,webhook,github,agents,code-review,automation", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Squad Webhook routes GitHub events to 8 AI agents that respond to @blackboxprogramming mentions. 69 repositories hooked. Automated code review, issue triage, PR feedback, and deployment notifications." },
   // ── Docs / Pages ──
-  { url: "https://blackroad.io/pricing", title: "BlackRoad Pricing — Simple. Sovereign. No Surprises.", description: "Operator (free), Pro ($29/mo), Sovereign ($199/mo), Enterprise (custom). Plus add-ons: Lucidia Enhanced, RoadAuth, Context Bridge, Knowledge Hub.", domain: "blackroad.io", category: "docs", tags: "pricing,plans,subscription,stripe,pro,sovereign,enterprise", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS pricing: Operator ($0, 1 node, 1 agent), Pro ($29/mo, 3 agents, 3 nodes), Sovereign ($199/mo, 8 agents, unlimited nodes, SLA), Enterprise (custom, white-label, on-prem). Add-ons: Lucidia Enhanced ($29/mo), RoadAuth Startup ($99/mo), Context Bridge ($10/mo), Knowledge Hub ($15/mo). All billing via Stripe." },
+  { url: "https://blackroad.io/pricing", title: "BlackRoad Pricing \u2014 Simple. Sovereign. No Surprises.", description: "Operator (free), Pro ($29/mo), Sovereign ($199/mo), Enterprise (custom). Plus add-ons: Lucidia Enhanced, RoadAuth, Context Bridge, Knowledge Hub.", domain: "blackroad.io", category: "docs", tags: "pricing,plans,subscription,stripe,pro,sovereign,enterprise", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS pricing: Operator ($0, 1 node, 1 agent), Pro ($29/mo, 3 agents, 3 nodes), Sovereign ($199/mo, 8 agents, unlimited nodes, SLA), Enterprise (custom, white-label, on-prem). Add-ons: Lucidia Enhanced ($29/mo), RoadAuth Startup ($99/mo), Context Bridge ($10/mo), Knowledge Hub ($15/mo). All billing via Stripe." },
   { url: "https://blackroad.io/docs", title: "BlackRoad Documentation", description: "Complete documentation for BlackRoad OS, agents, APIs, and infrastructure deployment.", domain: "blackroad.io", category: "docs", tags: "docs,documentation,api,deployment,guide", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "BlackRoad OS documentation covering installation, agent configuration, API reference, memory system, RoadChain integration, and infrastructure deployment guides. Getting started, CLI reference, and troubleshooting." },
   { url: "https://blackroad.io/blog", title: "BlackRoad Blog", description: "Technical blog covering sovereign infrastructure, AI agents, distributed systems, and the BlackRoad philosophy.", domain: "blackroad.io", category: "docs", tags: "blog,articles,engineering,philosophy,updates", image: "https://images.blackroad.io/pixel-art/road-logo.png", content: "Technical articles: The Sovereign Manifesto, RoadNet Mesh Architecture, Self-Healing Infrastructure, The RoadC Language, and more. Engineering deep-dives and philosophical explorations of sovereign AI." }
 ];
@@ -95,14 +94,14 @@ var VERIFIED_FACTS = [
   { claim: "Droplet servers", field: "droplets", verified_value: 2, source: "DigitalOcean: gematria (nyc3) + anastasia (nyc1)", method: "cloud_audit", category: "infrastructure" },
   { claim: "WireGuard mesh connections", field: "wireguard_peers", verified_value: 12, source: "wg show on fleet nodes", method: "fleet_scan", category: "network" },
   { claim: "Stripe pay customers", field: "stripe_customers", verified_value: 10, source: "stats.blackroad.io/live", method: "live_api", category: "revenue" },
-  { claim: "Gitea repos", field: "gitea_repos", verified_value: 0, source: "Gitea API on Octavia:3100 — DB empty, needs re-mirror", method: "live_api", category: "infrastructure" }
+  { claim: "Gitea repos", field: "gitea_repos", verified_value: 0, source: "Gitea API on Octavia:3100 \u2014 DB empty, needs re-mirror", method: "live_api", category: "infrastructure" }
 ];
 var FALSE_CLAIMS = [
   { claim: "200 agents", real: "17 RoundTrip agents verified", severity: "inflated", where: "stats API ecosystem.agents" },
   { claim: "30,000 agents", real: "17 agents", severity: "false", where: "legacy LICENSE files (mostly cleaned)" },
-  { claim: "629 Gitea repos", real: "0 — Gitea DB is empty, needs re-mirror", severity: "false", where: "multiple site descriptions" },
-  { claim: "52 TOPS always available", real: "26 TOPS — Cecilia is offline", severity: "partial", where: "site descriptions" },
-  { claim: "163 active chat agents", real: "unverified — chat worker generates synthetic agent names", severity: "inflated", where: "stats API chat.active_agents" },
+  { claim: "629 Gitea repos", real: "0 \u2014 Gitea DB is empty, needs re-mirror", severity: "false", where: "multiple site descriptions" },
+  { claim: "52 TOPS always available", real: "26 TOPS \u2014 Cecilia is offline", severity: "partial", where: "site descriptions" },
+  { claim: "163 active chat agents", real: "unverified \u2014 chat worker generates synthetic agent names", severity: "inflated", where: "stats API chat.active_agents" },
   { claim: "50 Workers", real: "unverified count", severity: "unverified", where: "stats API ecosystem.workers" }
 ];
 async function hashBlock(data) {
@@ -282,7 +281,7 @@ async function initDB(db) {
   }
   const chainCount = await db.prepare("SELECT COUNT(*) as c FROM roadchain").first();
   if (!chainCount?.c || chainCount.c === 0) {
-    await addToChain(db, "genesis", "roadchain", { message: "RoadSearch Verified v3 — Truth chain initialized", facts: VERIFIED_FACTS.length, false_claims: FALSE_CLAIMS.length });
+    await addToChain(db, "genesis", "roadchain", { message: "RoadSearch Verified v3 \u2014 Truth chain initialized", facts: VERIFIED_FACTS.length, false_claims: FALSE_CLAIMS.length });
     for (const fact of VERIFIED_FACTS) {
       await addToChain(db, "verify", fact.field, { claim: fact.claim, value: fact.verified_value, source: fact.source, method: fact.method });
     }
@@ -516,10 +515,10 @@ async function handleSearch(request, env) {
       flagged.push({ result: item.title, issue: "Inflated agent count", verified: "17 RoundTrip agents (live verified)" });
     }
     if (text.includes("629 gitea") || text.includes("629 repo")) {
-      flagged.push({ result: item.title, issue: "Gitea repo count incorrect", verified: "Gitea DB is empty — needs re-mirror" });
+      flagged.push({ result: item.title, issue: "Gitea repo count incorrect", verified: "Gitea DB is empty \u2014 needs re-mirror" });
     }
     if (text.includes("52 tops") && !text.includes("total")) {
-      flagged.push({ result: item.title, issue: "TOPS claim — Cecilia offline", verified: "26 TOPS live (Octavia only), 52 total hardware" });
+      flagged.push({ result: item.title, issue: "TOPS claim \u2014 Cecilia offline", verified: "26 TOPS live (Octavia only), 52 total hardware" });
     }
   }
   return Response.json({
@@ -544,8 +543,7 @@ __name(handleSearch, "handleSearch");
 async function generateAIAnswer(query, results, env) {
   const context = results.slice(0, 5).map(
     (r) => `[${r.title}](${r.url}): ${r.snippet}`
-  ).join("
-");
+  ).join("\n");
   const statsKeywords = ["how many", "count", "number", "agents", "repos", "users", "nodes", "tops", "models"];
   const isStatsQuery = statsKeywords.some((k) => query.toLowerCase().includes(k));
   const factContext = isStatsQuery ? `
@@ -560,7 +558,7 @@ VERIFIED FACTS (use these exact numbers, not inflated claims):
 - Custom domains: 20
 - Stripe customers: 10
 - Active subscriptions: 4
-IMPORTANT: If any search result claims 200+ agents, 30K agents, 629 Gitea repos, or 52 TOPS always-on — those are WRONG. Use verified numbers above.` : "";
+IMPORTANT: If any search result claims 200+ agents, 30K agents, 629 Gitea repos, or 52 TOPS always-on \u2014 those are WRONG. Use verified numbers above.` : "";
   const prompt = `You are RoadSearch, BlackRoad OS's verified search engine. Answer this query concisely (2-3 sentences max) using ONLY the context below. If the context doesn't contain enough info, say so briefly. Never make things up. Include relevant URLs as markdown links. If a claim in the results contradicts the verified facts, use the verified number instead and note the correction.
 
 Query: ${query}
@@ -609,7 +607,7 @@ async function federatedSearch(query, env) {
       const role = (a.role || a.type || "").toLowerCase();
       const caps = (a.capabilities || []).join(" ").toLowerCase();
       if (name.includes(q) || role.includes(q) || caps.includes(q)) {
-        extra.push({ url: "https://roundtrip.blackroad.io", title: `Agent: ${a.name} (${a.role || a.type})`, description: a.persona?.slice(0, 150) || `${a.name} — ${a.role || a.type}`, domain: "roundtrip.blackroad.io", category: "agent", tags: `agent,${a.group || ""}`, score: 0.8 });
+        extra.push({ url: "https://roundtrip.blackroad.io", title: `Agent: ${a.name} (${a.role || a.type})`, description: a.persona?.slice(0, 150) || `${a.name} \u2014 ${a.role || a.type}`, domain: "roundtrip.blackroad.io", category: "agent", tags: `agent,${a.group || ""}`, score: 0.8 });
       }
     }
   } catch {
@@ -1007,10 +1005,10 @@ var SEARCH_HTML = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RoadSearch — Verified Search Engine</title>
+<title>RoadSearch \u2014 Verified Search Engine</title>
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0a0a0a">
-<meta property="og:title" content="RoadSearch — BlackRoad OS">
+<meta property="og:title" content="RoadSearch \u2014 BlackRoad OS">
 <meta property="og:description" content="Sovereign search engine for the BlackRoad ecosystem">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BlackRoad OS">
@@ -1049,13 +1047,13 @@ a:hover{color:var(--link-hover)}
 @keyframes gradientSlide{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
 
-/* ─── Layout ─── */
+/* \u2500\u2500\u2500 Layout \u2500\u2500\u2500 */
 .app{flex:1;display:flex;flex-direction:column}
 .hero{flex:1;display:flex;flex-direction:column;align-items:center;transition:all .35s cubic-bezier(.4,0,.2,1)}
 .hero.home{justify-content:center;padding-bottom:60px}
 .hero.results{justify-content:flex-start;padding-top:28px}
 
-/* ─── Footer ─── */
+/* \u2500\u2500\u2500 Footer \u2500\u2500\u2500 */
 .footer{text-align:center;padding:24px 16px;border-top:1px solid var(--border);margin-top:auto}
 .footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
 .footer-links a{font-family:var(--mono);font-size:11px;color:var(--sub);transition:color .2s}
@@ -1063,7 +1061,7 @@ a:hover{color:var(--link-hover)}
 .footer-text{font-family:var(--mono);font-size:11px;color:var(--muted)}
 .footer-tagline{font-family:var(--grotesk);font-size:11px;color:var(--muted);margin-top:4px;letter-spacing:.02em}
 
-/* ─── Logo / Title ─── */
+/* \u2500\u2500\u2500 Logo / Title \u2500\u2500\u2500 */
 .logo-wrap{cursor:pointer;text-align:center;user-select:none}
 .title{font-family:var(--grotesk);font-weight:700;letter-spacing:-.03em;transition:font-size .35s cubic-bezier(.4,0,.2,1)}
 .home .title{font-size:clamp(40px,9vw,64px);margin-bottom:4px}
@@ -1071,7 +1069,7 @@ a:hover{color:var(--link-hover)}
 .title-grad{background:var(--grad-h);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientSlide 6s ease infinite}
 .subtitle{font-family:var(--mono);font-size:13px;color:var(--sub);margin-bottom:32px;letter-spacing:.03em}
 
-/* ─── Search Bar ─── */
+/* \u2500\u2500\u2500 Search Bar \u2500\u2500\u2500 */
 .search-wrap{position:relative;width:100%;padding:0 20px;transition:max-width .35s cubic-bezier(.4,0,.2,1)}
 .home .search-wrap{max-width:600px}
 .results .search-wrap{max-width:720px}
@@ -1096,7 +1094,7 @@ a:hover{color:var(--link-hover)}
 .hint{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;text-align:center}
 .hint kbd{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:10px;font-family:var(--mono);color:var(--sub)}
 
-/* ─── Suggestions dropdown ─── */
+/* \u2500\u2500\u2500 Suggestions dropdown \u2500\u2500\u2500 */
 .suggest-box{
   position:absolute;top:calc(100% + 4px);left:20px;right:20px;
   background:var(--card);border:1px solid var(--border);border-radius:12px;
@@ -1112,7 +1110,7 @@ a:hover{color:var(--link-hover)}
 .suggest-icon{font-size:13px;color:var(--muted);flex-shrink:0;width:18px;text-align:center}
 .suggest-text{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-/* ─── Category Filters ─── */
+/* \u2500\u2500\u2500 Category Filters \u2500\u2500\u2500 */
 .pills{display:flex;gap:8px;justify-content:center;margin-top:20px;flex-wrap:wrap;padding:0 20px}
 .pill{
   font-family:var(--mono);font-size:11px;padding:6px 16px;border-radius:20px;
@@ -1123,12 +1121,12 @@ a:hover{color:var(--link-hover)}
 .pill.active{border:none;background:var(--grad);color:#fff;font-weight:600;box-shadow:0 2px 12px #8844FF30}
 .pill .pill-count{font-size:9px;opacity:.7;margin-left:2px}
 
-/* ─── Stats row ─── */
+/* \u2500\u2500\u2500 Stats row \u2500\u2500\u2500 */
 .stats-bar{display:flex;gap:32px;justify-content:center;margin-top:28px;padding:0 20px}
 .stat{font-family:var(--mono);font-size:12px;color:var(--muted)}
 .stat-val{color:var(--sub);font-weight:600}
 
-/* ─── Search History ─── */
+/* \u2500\u2500\u2500 Search History \u2500\u2500\u2500 */
 .history{margin-top:20px;text-align:center;padding:0 20px}
 .history-label{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.12em}
 .history-items{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
@@ -1141,7 +1139,7 @@ a:hover{color:var(--link-hover)}
 .history-chip .x{font-size:10px;color:var(--muted);cursor:pointer}
 .history-chip .x:hover{color:#ff4466}
 
-/* ─── Trending ─── */
+/* \u2500\u2500\u2500 Trending \u2500\u2500\u2500 */
 .trending{margin-top:28px;text-align:center;padding:0 20px}
 .trending-label{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.12em}
 .trending-item{
@@ -1150,7 +1148,7 @@ a:hover{color:var(--link-hover)}
 }
 .trending-item:hover{color:var(--fg);background:var(--surface2)}
 
-/* ─── Results Area ─── */
+/* \u2500\u2500\u2500 Results Area \u2500\u2500\u2500 */
 .results-area{width:100%;max-width:720px;padding:0 20px;margin-top:20px}
 .results-meta{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .results-meta .dot{color:var(--border)}
@@ -1171,7 +1169,7 @@ a:hover{color:var(--link-hover)}
 .no-results p{font-family:var(--inter);font-size:14px;color:var(--muted);margin-bottom:16px}
 .no-results-suggestions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 
-/* ─── AI Answer Box ─── */
+/* \u2500\u2500\u2500 AI Answer Box \u2500\u2500\u2500 */
 .ai-box{
   background:var(--card);border:1px solid var(--border);border-left:3px solid transparent;
   border-image:var(--grad) 1;border-image-slice:0 0 0 1;
@@ -1184,7 +1182,7 @@ a:hover{color:var(--link-hover)}
 .ai-text a{color:var(--link);border-bottom:1px solid #7ab8ff30}
 .ai-text a:hover{border-bottom-color:var(--link)}
 
-/* ─── Result Card ─── */
+/* \u2500\u2500\u2500 Result Card \u2500\u2500\u2500 */
 .result-card{padding:18px 0;border-bottom:1px solid var(--border);animation:fadeUp .25s ease;animation-fill-mode:backwards}
 .result-card:nth-child(2){animation-delay:.05s}
 .result-card:nth-child(3){animation-delay:.1s}
@@ -1221,7 +1219,7 @@ a:hover{color:var(--link-hover)}
 .score-fill{height:100%;border-radius:2px;background:var(--grad-h);transition:width .3s ease}
 .score-text{font-family:var(--mono);font-size:10px;color:var(--muted)}
 
-/* ─── Verification Badges ─── */
+/* \u2500\u2500\u2500 Verification Badges \u2500\u2500\u2500 */
 .verified-badge{font-family:var(--mono);font-size:9px;padding:2px 8px;border-radius:10px;display:inline-flex;align-items:center;gap:4px;letter-spacing:.03em}
 .verified-badge.verified{background:#0a2a0a;border:1px solid #1a4a1a;color:#4aba78}
 .verified-badge.unverified{background:#2a2a0a;border:1px solid #4a4a1a;color:#c4a43a}
@@ -1233,7 +1231,7 @@ a:hover{color:var(--link-hover)}
 .verified-dot.red{background:#e84a4a}
 .verified-dot.orange{background:#e8944a}
 
-/* ─── Truth Dashboard ─── */
+/* \u2500\u2500\u2500 Truth Dashboard \u2500\u2500\u2500 */
 .truth-dashboard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:24px;animation:fadeUp .3s ease}
 .truth-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .truth-title{font-family:var(--mono);font-size:11px;color:var(--sub);text-transform:uppercase;letter-spacing:.1em}
@@ -1247,13 +1245,13 @@ a:hover{color:var(--link-hover)}
 .truth-card-value{font-family:var(--grotesk);font-size:18px;font-weight:600;color:var(--fg)}
 .truth-card-source{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:4px}
 
-/* ─── Flagged Claims Banner ─── */
+/* \u2500\u2500\u2500 Flagged Claims Banner \u2500\u2500\u2500 */
 .flag-banner{background:#1a0a0a;border:1px solid #3a1a1a;border-left:3px solid #e84a4a;border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:16px;animation:fadeUp .3s ease}
 .flag-banner-title{font-family:var(--mono);font-size:10px;color:#e84a4a;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
 .flag-item{font-family:var(--inter);font-size:12px;color:#999;line-height:1.6}
 .flag-item .correction{color:#4aba78;font-weight:500}
 
-/* ─── Pagination ─── */
+/* \u2500\u2500\u2500 Pagination \u2500\u2500\u2500 */
 .pagination{display:flex;justify-content:center;align-items:center;gap:8px;padding:28px 0}
 .page-btn{
   font-family:var(--mono);font-size:12px;padding:8px 18px;border:1px solid var(--border);border-radius:8px;
@@ -1269,7 +1267,7 @@ a:hover{color:var(--link-hover)}
 .page-num.active{background:var(--grad);color:#fff;font-weight:600}
 .page-info{font-family:var(--mono);font-size:11px;color:var(--muted)}
 
-/* ─── Responsive ─── */
+/* \u2500\u2500\u2500 Responsive \u2500\u2500\u2500 */
 @media(max-width:640px){
   .home .title{font-size:clamp(32px,10vw,48px)}
   .search-input{padding:13px 90px 13px 38px;font-size:15px}
@@ -1334,7 +1332,7 @@ a:hover{color:var(--link-hover)}
 <a href="https://lucidia.earth" style="background:#131313;border:1px solid #1a1a1a;border-radius:6px;padding:8px 14px;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:13px;color:#737373;font-weight:500">Lucidia</a>
 <a href="https://github.com/BlackRoad-OS-Inc" style="background:#131313;border:1px solid #1a1a1a;border-radius:6px;padding:8px 14px;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:13px;color:#737373;font-weight:500">GitHub</a>
 </div>
-<div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#262626"><span data-stat="repos">2,194</span> repos � <span data-stat="orgs">36</span> orgs � <span data-stat="domains">20</span> domains � <span data-stat="agents">17</span> agents <span class="verified-badge verified" style="font-size:8px"><span class="verified-dot green"></span>verified</span></div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#262626"><span data-stat="repos">2,194</span> repos \xB7 <span data-stat="orgs">36</span> orgs \xB7 <span data-stat="domains">20</span> domains \xB7 <span data-stat="agents">17</span> agents <span class="verified-badge verified" style="font-size:8px"><span class="verified-dot green"></span>verified</span></div>
 </div>
 
   <div class="footer">
@@ -1382,7 +1380,7 @@ let state = {
 const $ = id => document.getElementById(id);
 const qInput = () => $('q');
 
-// ─── Init ──────────────────────────────────────────────────────────
+// \u2500\u2500\u2500 Init \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function init() {
   state.history = loadHistory();
   state.factsData = null;
@@ -1431,7 +1429,7 @@ function globalKey(e) {
   }
 }
 
-// ─── API ──────────────────────────────────────────────────────────
+// \u2500\u2500\u2500 API \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 async function api(path) {
   const res = await fetch(API_BASE + path, { headers: { 'Accept': 'application/json' } });
   if (!res.ok) throw new Error(res.status);
@@ -1451,7 +1449,7 @@ async function loadStats() {
   } catch(e) { console.warn('Stats load failed:', e); }
 }
 
-// ─── Truth Dashboard ─────────────────────────────────────────────
+// \u2500\u2500\u2500 Truth Dashboard \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 async function loadTruthDashboard() {
   try {
     const d = await api('/facts');
@@ -1468,7 +1466,7 @@ function renderTruthDashboard(d) {
 
   let html = '<div class="truth-dashboard">';
   html += '<div class="truth-header">';
-  html += '<span class="truth-title">Truth Dashboard — Verified Stats</span>';
+  html += '<span class="truth-title">Truth Dashboard \u2014 Verified Stats</span>';
   html += '<span class="trust-score ' + scoreClass + '">' + d.trust_score + '%</span>';
   html += '</div>';
 
@@ -1492,7 +1490,7 @@ function renderTruthDashboard(d) {
       const sevColor = f.severity === 'false' ? '#e84a4a' : f.severity === 'inflated' ? '#e8944a' : '#c4a43a';
       html += '<div style="font-family:var(--inter);font-size:12px;color:#777;margin-bottom:4px">';
       html += '<span style="color:' + sevColor + ';font-family:var(--mono);font-size:9px;text-transform:uppercase">[' + esc(f.severity) + ']</span> ';
-      html += '"' + esc(f.claim) + '" → <span class="correction" style="color:#4aba78">' + esc(f.real) + '</span>';
+      html += '"' + esc(f.claim) + '" \u2192 <span class="correction" style="color:#4aba78">' + esc(f.real) + '</span>';
       html += '</div>';
     });
     html += '</div>';
@@ -1512,7 +1510,7 @@ async function runVerify() {
   } catch(e) { alert('Verify failed: ' + e.message); }
 }
 
-// ─── Search History (localStorage) ────────────────────────────────
+// \u2500\u2500\u2500 Search History (localStorage) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function loadHistory() {
   try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]').slice(0, MAX_HISTORY); }
   catch { return []; }
@@ -1536,7 +1534,7 @@ function clearHistory() {
   renderHistory();
 }
 
-// ─── Search ──────────────────────────────────────────────────────
+// \u2500\u2500\u2500 Search \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function doSearch(e) { e && e.preventDefault(); search(state.query, state.category, 1); }
 
 async function search(q, cat, pg) {
@@ -1581,7 +1579,7 @@ async function search(q, cat, pg) {
   renderResults();
 }
 
-// ─── Suggestions ────────────────────────────────────────────────
+// \u2500\u2500\u2500 Suggestions \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 let suggestTimer = null;
 function onInput() {
   state.query = qInput().value;
@@ -1650,13 +1648,13 @@ function onKeyDown(e) {
 
 function pickSuggestion(text) { state.query = text; qInput().value = text; closeSuggest(); search(text, state.category, 1); }
 
-// ─── Lucky ───────────────────────────────────────────────────────
+// \u2500\u2500\u2500 Lucky \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function feelingLucky() {
   const q = (state.query || state.submitted || '').trim();
   if (q) window.location.href = '/lucky?q=' + encodeURIComponent(q);
 }
 
-// ─── Navigation ─────────────────────────────────────────────────
+// \u2500\u2500\u2500 Navigation \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function goHome() {
   state.submitted = ''; state.results = null; state.aiAnswer = null; state.aiSource = null;
   state.query = ''; state.total = 0; state.page = 1; state.pages = 1;
@@ -1695,11 +1693,11 @@ function setCategory(cat) {
   if (state.submitted) search(state.submitted, cat, 1);
 }
 
-// ─── Render ─────────────────────────────────────────────────────
+// \u2500\u2500\u2500 Render \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function renderPills() {
   $('pills').innerHTML = CATEGORIES.map(c => {
     const count = c.key === 'All' ? '' : (state.categoryCounts[c.key] ? '<span class="pill-count">(' + state.categoryCounts[c.key] + ')</span>' : '');
-    return '<button class="pill' + (state.category === c.key ? ' active' : '') + '" onclick="setCategory(\'' + c.key + '\')">' + c.label + count + '</button>';
+    return '<button class="pill' + (state.category === c.key ? ' active' : '') + '" onclick="setCategory(\\'' + c.key + '\\')">' + c.label + count + '</button>';
   }).join('');
 }
 
@@ -1709,7 +1707,7 @@ function renderStats() {
     '<span class="stat"><span class="stat-val">' + (s.indexed || 0).toLocaleString() + '</span> pages indexed</span>' +
     '<span class="stat"><span class="stat-val">' + (s.queries24h || 0).toLocaleString() + '</span> searches today</span>' +
     '<span class="stat"><span class="stat-val">' + (s.queries || 0).toLocaleString() + '</span> total queries</span>';
-  $('footerStats').textContent = (s.indexed || 0).toLocaleString() + ' pages indexed \u00B7 ' + (s.queries || 0).toLocaleString() + ' total queries';
+  $('footerStats').textContent = (s.indexed || 0).toLocaleString() + ' pages indexed \\u00B7 ' + (s.queries || 0).toLocaleString() + ' total queries';
 }
 
 function renderHistory() {
@@ -1717,8 +1715,8 @@ function renderHistory() {
   if (!state.history.length) { area.style.display = 'none'; return; }
   let html = '<div class="history-label">Recent Searches</div><div class="history-items">';
   state.history.slice(0, 8).forEach(h => {
-    html += '<span class="history-chip" onclick="pickSuggestion(\'' + esc(h) + '\')">'
-      + esc(h) + '<span class="x" onclick="event.stopPropagation();removeHistory(\'' + esc(h) + '\')">&times;</span></span>';
+    html += '<span class="history-chip" onclick="pickSuggestion(\\'' + esc(h) + '\\')">'
+      + esc(h) + '<span class="x" onclick="event.stopPropagation();removeHistory(\\'' + esc(h) + '\\')">&times;</span></span>';
   });
   if (state.history.length > 0) {
     html += '<span class="history-chip" onclick="clearHistory()" style="color:var(--muted);border-color:var(--muted)">Clear all</span>';
@@ -1733,7 +1731,7 @@ function renderTrending() {
   let html = '<div class="trending-label">Trending Searches</div><div>';
   state.trending.slice(0, 8).forEach(t => {
     const text = typeof t === 'string' ? t : (t.query || '');
-    if (text) html += '<span class="trending-item" onclick="pickSuggestion(\'' + esc(text) + '\')">' + esc(text) + '</span>';
+    if (text) html += '<span class="trending-item" onclick="pickSuggestion(\\'' + esc(text) + '\\')">' + esc(text) + '</span>';
   });
   html += '</div>';
   $('trending').innerHTML = html;
@@ -1754,7 +1752,7 @@ function renderSuggestions() {
     }
     html += '<div class="suggest-item' + (i === state.suggestIdx ? ' active' : '') + '" '
       + 'onmouseenter="state.suggestIdx=' + i + ';renderSuggestions()" '
-      + 'onclick="pickSuggestion(\'' + esc(s.text) + '\')">'
+      + 'onclick="pickSuggestion(\\'' + esc(s.text) + '\\')">'
       + '<span class="suggest-icon">' + (icons[s.type] || '&#x2192;') + '</span>'
       + '<span class="suggest-text">' + highlightMatch(esc(s.text), state.query) + '</span>'
       + '</div>';
@@ -1783,12 +1781,12 @@ function renderResults() {
     area.innerHTML = '<div class="no-results"><h3>No results for &ldquo;' + esc(state.submitted) + '&rdquo;</h3>'
       + '<p>Try different keywords or broaden your search.</p>'
       + '<div class="no-results-suggestions">'
-      + suggestions.map(s => '<span class="trending-item" onclick="pickSuggestion(\'' + esc(s) + '\')">' + esc(s) + '</span>').join('')
+      + suggestions.map(s => '<span class="trending-item" onclick="pickSuggestion(\\'' + esc(s) + '\\')">' + esc(s) + '</span>').join('')
       + '</div></div>';
     return;
   }
 
-  const qWords = state.submitted.toLowerCase().split(/\s+/).filter(w => w.length >= 2);
+  const qWords = state.submitted.toLowerCase().split(/\\s+/).filter(w => w.length >= 2);
   let html = '';
 
   // Meta line
@@ -1806,7 +1804,7 @@ function renderResults() {
     html += '<div class="flag-banner">';
     html += '<div class="flag-banner-title">Fact Check: ' + state.flaggedClaims.length + ' claim' + (state.flaggedClaims.length > 1 ? 's' : '') + ' flagged</div>';
     state.flaggedClaims.forEach(f => {
-      html += '<div class="flag-item"><span style="color:#e84a4a">' + esc(f.issue) + '</span> — <span class="correction">' + esc(f.verified) + '</span></div>';
+      html += '<div class="flag-item"><span style="color:#e84a4a">' + esc(f.issue) + '</span> \u2014 <span class="correction">' + esc(f.verified) + '</span></div>';
     });
     html += '</div>';
   }
@@ -1814,7 +1812,7 @@ function renderResults() {
   // AI Answer
   if (state.aiAnswer) {
     const rendered = state.aiAnswer
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+      .replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
     const sourceBadge = state.aiSource === 'ollama' ? 'AI' : state.aiSource === 'summary' ? 'Summary' : 'Cached';
     html += '<div class="ai-box">'
       + '<div class="ai-header"><span class="ai-label">Verified Answer</span><span class="ai-badge">' + sourceBadge + '</span><span class="verified-badge verified" style="margin-left:auto"><span class="verified-dot green"></span>fact-checked</span></div>'
@@ -1888,7 +1886,7 @@ function renderResults() {
   if (state.page > 1) area.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// ─── Utilities ──────────────────────────────────────────────────
+// \u2500\u2500\u2500 Utilities \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function esc(s) {
   if (!s) return '';
   const d = document.createElement('div');
@@ -1899,10 +1897,10 @@ function esc(s) {
 function highlightTerms(html, words) {
   if (!words.length) return html;
   // Build regex that matches any of the query words (case insensitive)
-  const pattern = words.map(w => w.replace(/[.*+?^\${}()|[\]\\]/g, '\\\$&')).join('|');
+  const pattern = words.map(w => w.replace(/[.*+?^\${}()|[\\]\\\\]/g, '\\\\\\$&')).join('|');
   try {
     const re = new RegExp('(' + pattern + ')', 'gi');
-    return html.replace(re, '<mark>\$1</mark>');
+    return html.replace(re, '<mark>\\$1</mark>');
   } catch { return html; }
 }
 
@@ -1929,9 +1927,7 @@ var worker_default = {
       return new Response(null, { status: 204, headers });
     }
     if (url.pathname === "/robots.txt")
-      return new Response("User-agent: *
-Allow: /
-Sitemap: https://search.blackroad.io/sitemap.xml", { headers: { "Content-Type": "text/plain" } });
+      return new Response("User-agent: *\nAllow: /\nSitemap: https://search.blackroad.io/sitemap.xml", { headers: { "Content-Type": "text/plain" } });
     if (url.pathname === "/sitemap.xml") {
       const d = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
       return new Response(`<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://search.blackroad.io/</loc><lastmod>${d}</lastmod><priority>1.0</priority></url></urlset>`, { headers: { "Content-Type": "application/xml" } });
@@ -1995,11 +1991,11 @@ Sitemap: https://search.blackroad.io/sitemap.xml", { headers: { "Content-Type": 
                 suggest: "GET /suggest?q=prefix",
                 lucky: "GET /lucky?q=query (redirects to top result)",
                 stats: "GET /stats",
-                facts: "GET /facts — all verified facts + false claims + trust score",
-                verify: "GET /verify — re-check facts against live sources",
-                "fact-check": "GET /fact-check?claim=text — check a specific claim",
-                chain: "GET /chain — RoadChain immutable audit trail of all verifications",
-                "crawl-images": "GET /crawl-images — crawl og:image from indexed pages missing thumbnails",
+                facts: "GET /facts \u2014 all verified facts + false claims + trust score",
+                verify: "GET /verify \u2014 re-check facts against live sources",
+                "fact-check": "GET /fact-check?claim=text \u2014 check a specific claim",
+                chain: "GET /chain \u2014 RoadChain immutable audit trail of all verifications",
+                "crawl-images": "GET /crawl-images \u2014 crawl og:image from indexed pages missing thumbnails",
                 index: "POST /index (auth required)",
                 health: "GET /health",
                 init: "GET /init (seed database)",
