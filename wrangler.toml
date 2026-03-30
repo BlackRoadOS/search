@@ -3,3 +3,8 @@ main = "src/index.js"
 compatibility_date = "2024-12-01"
 # Custom domain is managed via CF dashboard route, not wrangler
 # Domain: search.blackroad.io
+
+[[d1_databases]]
+binding = "DB"
+database_name = "roadsearch-db"
+database_id = "local-roadsearch-db"
