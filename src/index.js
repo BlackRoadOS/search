@@ -1533,6 +1533,20 @@ function clearHistory() {
   state.history = [];
   renderHistory();
 }
+function exportHistory() {
+  const history = loadHistory();
+  if (!history || history.length === 0) {
+    alert("No search history to export.");
+    return;
+  }
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(history, null, 2));
+  const downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", "roadsearch_history.json");
+  document.body.appendChild(downloadAnchorNode);
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+}
 
 // \u2500\u2500\u2500 Search \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function doSearch(e) { e && e.preventDefault(); search(state.query, state.category, 1); }
@@ -1720,6 +1734,8 @@ function renderHistory() {
   });
   if (state.history.length > 0) {
     html += '<span class="history-chip" onclick="clearHistory()" style="color:var(--muted);border-color:var(--muted)">Clear all</span>';
+    html += '<span class="history-chip" onclick="exportHistory()" style="color:var(--link);border-color:var(--link)">Export JSON </ span > ';
+
   }
   html += '</div>';
   area.innerHTML = html;
@@ -1850,7 +1866,7 @@ function renderResults() {
     html += '<div class="score-wrap"><div class="score-bar"><div class="score-fill" style="width:' + Math.round(score * 100) + '%"></div></div>'
       + '<span class="score-text">' + Math.round(score * 100) + '%</span></div>';
     html += '</div></div>';
-    if (img) html += '<div style="display:flex;align-items:flex-start;justify-content:flex-end"><img class="result-thumb" src="' + esc(img) + '" loading="lazy" alt="" onerror="this.parentElement.style.display='none'"></div>';
+    if (img) html += '<div style="display:flex;align-items:flex-start;justify-content:flex-end"><img class="result-thumb" src="' + esc(img) + '" loading="lazy" alt="" onerror="this.parentElement.style.display=\\'none\\'"></div>';
     html += '</div>';
   });
 
